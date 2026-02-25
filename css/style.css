@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 80%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root {
+    --primary-color: #cc42a5;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --font-family: 'Courier New', Courier, monospace;
+    --font-size: 16px;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+
+
+
