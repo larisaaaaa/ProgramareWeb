@@ -1,83 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Laboratorul1</title>
-        <link rel="stylesheet" href="css/style.css">
-
-        <style>
-            #home {
-                color: #dc278e;
-                padding: 35px;
-            }
-        </style>
-    </head>
-
-    <body>
-        <header id="home">
-            <h1>Netedu Larisa-Nicoleta</h1>
-            <h2>Facultatea de Inginerie Electrica si calculatoare</h2>
-            <p></p>
-        </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolorem voluptatem neque facere delectus laboriosam rem magnam praesentium tenetur sint natus libero atque sunt recusandae voluptatibus dicta! Impedit distinctio saepe delectus rerum vel accusantium ipsum eum aliquam, eveniet quis dolorum exercitationem nisi, necessitatibus sunt cupiditate at, odit voluptates accusamus velit omnis repellendus et nulla excepturi. Impedit doloremque, natus harum ut illum ad quo quia asperiores maiores corrupti architecto veniam nesciunt, deserunt temporibus dolores dolor cupiditate est minima laudantium sapiente nostrum quidem atque maxime! 
-            <br>Earum atque itaque beatae aut, pariatur vitae? Non modi, mollitia aspernatur numquam explicabo eius necessitatibus praesentium fugiat sapiente sit aliquid eos, quod cupiditate voluptatibus at minus reiciendis perspiciatis consequatur labore dicta eum magni eaque. Nemo doloremque quae exercitationem incidunt aspernatur non odio repellendus tenetur assumenda ut? Aperiam iusto explicabo, dolore animi illo blanditiis excepturi officia quibusdam veniam error ullam suscipit saepe odit commodi. Eaque tempora minima doloremque sed illum ratione, aliquid eos quod tempore iure, suscipit sint quos voluptatem exercitationem veritatis. 
-            <br>Voluptate natus iusto fugit quas obcaecati iure, magnam quia vero dolorum recusandae illum cum, dolore suscipit blanditiis exercitationem. Ipsum, enim! Quod necessitatibus, corporis aliquam inventore vel porro quisquam nobis perferendis enim temporibus aperiam placeat error sed amet! Hic, itaque molestiae a ipsum iure voluptas minima nihil. Exercitationem esse autem asperiores laborum dicta blanditiis, ullam consequatur ut error. Ipsam omnis blanditiis accusantium reprehenderit illo tenetur, explicabo eius, perspiciatis magni nemo non? Dolor ut fuga quod iure ullam, vero expedita ipsum veritatis culpa sed? Neque consequuntur 
-            facilis quaerat repellat qui reiciendis quae, eveniet, fugit doloremque voluptatem aliquid ab sequi laboriosam consequatur, esse asperiores quod nobis?
-        <nav>
-            <ul>
-                <li><a href="#home">Acasa</a></li>
-                <li><a href="#despreMine">Despre mine</a></li>
-                <li><a href="#educatie">Educatie</a></li>
-                <li onclick="darkMode()">Dark Mode</li>
-            </ul>
-        </nav>
-        <main style = "padding-left: 2%;">
-            <section id="despreMine">
-                <h2>About</h2>
-                <img src="images/eu.png" alt="Poza cu mine" width="200" height="200" loading="lazy" >
-                <p>Sunt studentă la Facultatea de Inginerie Electrică și Calculatoare, pasionată de tehnologie și programare. <br> Îmi place să învăț lucruri noi și să îmi dezvolt abilitățile în domeniul IT si comunicare.</p>
-            </section>
-            <section id="educatie">
-                <h2>Education</h2>
-                <ol id="ordinatedList">
-                    <li>Fosta eleva la scoala X (8 ani)</li>
-                    <li>Fosta eleva la liceul Y (4 ani)</li>
-                    <li>Actula studenta la IESC (anul 2, anul 2025)</li>
-                </ol>
-            </section>
-            <aside>
-                <h2>Contact</h2>
-                <p>Email: larisa.netedu@student.unitbv.ro</p>
-                <h2>Hobbies</h2>
-                <p>Îmi place să citesc cărți, să mă plimb în natură și si sa calatoresc.</p>
-            </aside>
-
-            <form id = "contactForm">
-                <label for="nume">Nume:</label>
-                <input type="text" id="nume" name="nume" required><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="mesaj">Mesaj:</label><br>
-                <textarea id="mesaj" name="mesaj" rows="4" rows="4" required></textarea><br><br>
-
-                <input type="submit" onclick="submitForm()" value="Trimite">
-            </form>
-
-             <footer>
-                <p>&copy; 2024 Netedu Larisa-Nicoleta. Toate drepturile rezervate. <br>larisa.netedu@student.unitbv.ro</p>
-                <script src="js/contact-form.js"></script> 
-                <p id = "form-feedback" style="font-weight: bold;"></p>
-                <br>
-                <script src="js/array.js"></script>
-            </footer>
-    </body>
-
-    <script> 
-        alert('Hello World!'); 
-    </script> 
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proiect-web</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
