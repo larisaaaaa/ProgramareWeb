@@ -27,4 +27,19 @@ ul li{
 }
 
 
+.dark-mode-toggle {
+  --secondary-color: black;
+  --text-color: white;
+}
 
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+.hidden {
+    display: none;
+}

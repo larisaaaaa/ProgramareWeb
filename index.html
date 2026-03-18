@@ -5,20 +5,21 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Laboratorul1</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.css">
 
         <style>
             #home {
                 color: #dc278e;
-                padding: 30px;
+                padding: 35px;
             }
         </style>
     </head>
 
-    <body style="background-color: #FAE8FF;">
+    <body>
         <header id="home">
             <h1>Netedu Larisa-Nicoleta</h1>
             <h2>Facultatea de Inginerie Electrica si calculatoare</h2>
+            <p></p>
         </header>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolorem voluptatem neque facere delectus laboriosam rem magnam praesentium tenetur sint natus libero atque sunt recusandae voluptatibus dicta! Impedit distinctio saepe delectus rerum vel accusantium ipsum eum aliquam, eveniet quis dolorum exercitationem nisi, necessitatibus sunt cupiditate at, odit voluptates accusamus velit omnis repellendus et nulla excepturi. Impedit doloremque, natus harum ut illum ad quo quia asperiores maiores corrupti architecto veniam nesciunt, deserunt temporibus dolores dolor cupiditate est minima laudantium sapiente nostrum quidem atque maxime! 
             <br>Earum atque itaque beatae aut, pariatur vitae? Non modi, mollitia aspernatur numquam explicabo eius necessitatibus praesentium fugiat sapiente sit aliquid eos, quod cupiditate voluptatibus at minus reiciendis perspiciatis consequatur labore dicta eum magni eaque. Nemo doloremque quae exercitationem incidunt aspernatur non odio repellendus tenetur assumenda ut? Aperiam iusto explicabo, dolore animi illo blanditiis excepturi officia quibusdam veniam error ullam suscipit saepe odit commodi. Eaque tempora minima doloremque sed illum ratione, aliquid eos quod tempore iure, suscipit sint quos voluptatem exercitationem veritatis. 
@@ -29,6 +30,7 @@
                 <li><a href="#home">Acasa</a></li>
                 <li><a href="#despreMine">Despre mine</a></li>
                 <li><a href="#educatie">Educatie</a></li>
+                <li onclick="darkMode()">Dark Mode</li>
             </ul>
         </nav>
         <main style = "padding-left: 2%;">
@@ -39,10 +41,10 @@
             </section>
             <section id="educatie">
                 <h2>Education</h2>
-                <ol>
-                    <li>Fosta eleva la scoal X</li>
-                    <li>Fosta eleva la liceul Y</li>
-                    <li>Actula studenta la IESC</li>
+                <ol id="ordinatedList">
+                    <li>Fosta eleva la scoala X (8 ani)</li>
+                    <li>Fosta eleva la liceul Y (4 ani)</li>
+                    <li>Actula studenta la IESC (anul 2, anul 2025)</li>
                 </ol>
             </section>
             <aside>
@@ -52,7 +54,7 @@
                 <p>Îmi place să citesc cărți, să mă plimb în natură și si sa calatoresc.</p>
             </aside>
 
-            <form>
+            <form id = "contactForm">
                 <label for="nume">Nume:</label>
                 <input type="text" id="nume" name="nume" required><br><br>
 
@@ -62,17 +64,20 @@
                 <label for="mesaj">Mesaj:</label><br>
                 <textarea id="mesaj" name="mesaj" rows="4" rows="4" required></textarea><br><br>
 
-                <input type="button" onclick="submitForm()" value="Trimite">
+                <input type="submit" onclick="submitForm()" value="Trimite">
             </form>
 
              <footer>
                 <p>&copy; 2024 Netedu Larisa-Nicoleta. Toate drepturile rezervate. <br>larisa.netedu@student.unitbv.ro</p>
                 <script src="js/contact-form.js"></script> 
+                <p id = "form-feedback" style="font-weight: bold;"></p>
+                <br>
+                <script src="js/array.js"></script>
             </footer>
     </body>
 
     <script> 
-        alert("Hello World!"); 
+        alert('Hello World!'); 
     </script> 
 
 </html>
