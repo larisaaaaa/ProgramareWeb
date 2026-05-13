@@ -5,6 +5,7 @@ import Contact from './pages/Contact.jsx';
 import Navbar from './Navbar.jsx'
 import NotFound from './pages/NotFound.jsx';
 import About from './pages/About.jsx';
+import ProjectList from './ProjectList.jsx';
 
 function App() {
  return (

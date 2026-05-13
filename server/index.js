@@ -1,6 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const Project = require('./models/Project');
+
+const app = express();
+const PORT = 3000;
+
+app.use(cors());
+app.use(express.json());
+
 
 mongoose.connect('mongodb://localhost:27017/dashboard')
  .then(function() {
@@ -9,13 +17,12 @@ mongoose.connect('mongodb://localhost:27017/dashboard')
  .catch(function(err) {
  console.error('Eroare conectare MongoDB:', err);
  });
-const app = express();
-const PORT = 3000;
+
 // Prima ruta: raspunde la GET /
 app.get('/api/projects', async function(req, res) {
  try {
  const projects = await Project.find();
- res.json(projects);
+ res.json({ projects });
  } catch (err) {
  res.status(500).json({ error: 'Eroare ' + err });
  }

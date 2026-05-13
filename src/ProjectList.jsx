@@ -7,7 +7,7 @@ function ProjectList() {
   const [search, setSearch] = useState('');
 
   useEffect(function () {
-    fetch('/data/projects.json')
+    fetch('http://localhost:3000/api/projects')
       .then(function (response) {
         return response.json();
       })
