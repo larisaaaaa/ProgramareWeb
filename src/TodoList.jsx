@@ -1,14 +1,14 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
   // Functie pentru adaugat task
   function handleAdd() {
-    if (input.trim() === '') return;
+    if (input.trim() === "") return;
     setTodos([...todos, input]);
-    setInput('');
+    setInput("");
   }
 
   // Functie pentru sters task
@@ -29,14 +29,12 @@ function TodoList() {
       <ul>
         {todos.map((todo, index) => (
           <li key={index}>
-            {todo}{" "}
-            <button onClick={() => handleDelete(index)}>Sterge</button>
+            {todo} <button onClick={() => handleDelete(index)}>Sterge</button>
           </li>
         ))}
       </ul>
-
     </div>
   );
 }
 
-export default TodoList;    
+export default TodoList;

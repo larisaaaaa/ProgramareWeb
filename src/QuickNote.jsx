@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function QuickNote() {
-  const [note, setNote] = useState('');
+  const [note, setNote] = useState("");
 
   return (
     <div>

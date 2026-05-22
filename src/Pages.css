@@ -1,0 +1,109 @@
+input{
+    border: none;
+    background: #d2c3f6;
+    color: #36255c;
+    border-radius: 10px;
+    padding: 8px 5px 8px 5px;
+    font-family: var(--mono);
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 50%;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+h3{
+    margin-top: 40px;
+    font-family:  Monaco, Consolas, "Lucida Console", monospace;
+    margin-left: 15px;
+    text-align: left;
+}
+
+button {
+    font-family: var(--mono);
+    color: var(--text-h);
+    background: #18071D;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 15px;
+    border-radius: 6px;
+}
+button:hover {
+    background:#420D4B;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    color:aliceblue;
+}
+
+.btn_form_adaugare {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.stats {
+    text-align: left;
+    margin-top: 30px;
+    font-family: var(--mono);
+    color: var(--text-h);
+}
+
+
+.project_card button {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+p {
+    color: var(--text-h);
+    font-family: var(--mono);
+    margin-left: 15px;
+    text-align: left;
+}
+label {
+    color: var(--text-h);
+    font-family: var(--mono);
+    margin-left: 15px;
+}
+
+textarea {
+    border: none;
+    background: #d2c3f6;
+    color: #36255c;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    font-family: var(--mono);
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 50%;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.stats_p {
+    color: var(--text-h);
+    font-family: var(--mono);
+    color:#D3CCD6; ;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.btn_Home{
+    width: 100px;
+    font-size: 16px;  
+    margin-top: 10px;
+}
+
+.link_Home {
+    color: var(--text-h);
+    text-decoration: none;
+}
